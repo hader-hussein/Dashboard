@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="keywords" content="admin">
-     <meta name="description" content="admin">
-     <meta name="author" content="hadeer hussein">
-     <meta property="og:title" content="admin"/>
-     <meta property="og:type" content="Website"/>
-     <meta property="og:url" content="" />
-     <meta property="og:image" content="./assets/img/logo.png"/>
-     <link href="./assets/img/logo.png"  rel="shortcut icon"/>
-     <title> admin</title>
-     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-     <link href="./assets/font-awesome/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-     <link href="./assets/css/style.css" rel="stylesheet">
-     <link href="./assets/css/style-card.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="admin">
+  <meta name="description" content="admin">
+  <meta name="author" content="hadeer hussein">
+  <meta property="og:title" content="admin"/>
+  <meta property="og:type" content="Website"/>
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="./assets/img/logo-modern.png"/>
+  <link href="./assets/img/logo-modern.png"  rel="shortcut icon"/>
+  <title> admin</title>
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font-awesome/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/DataTables/datatables.min.css"/>
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/style-card.css" rel="stylesheet">
 </head>
 <body>
       <!--start-nav-->
@@ -44,17 +45,55 @@
                       99+
                     </span>
                   </a>
-                  <ul class="dropdown-menu  dropdown-menu-dark text-small shadow">
-                    <li><a class="dropdown-item" href="#">You have 5 new tasks</a></li>
-                    <li><a class="dropdown-item" href="#">You have 5 new tasks</a></li>
-                   
+                  <ul class="dropdown-menu  dropdown-menu-dark drop-notification text-small shadow">
+                    <div class="row mx-0 justify-content-between align-items-center">
+                      <div class="col">
+                        الاشعارات
+                      </div>
+                      <div class="col text-start">
+                        <button class="btn btn-clear text-capitalize">
+                          clear all
+                        </button>
+                       
+                      </div>
+                    </div>
+                    <li class="mt-2">
+                      <a class="dropdown-item" href="#">
+                       <div class="d-flex li-notification">
+                         <!--start-notification-->
+                         <img src="./assets/img/table.png" alt="img-notification">
+                         <div class="mx-2 defintino-notification">
+                          <p>You have 5 new tasks You have 5 new tasks</p>
+                          <span>5 hours age</span>
+                         </div>
+                       </div>
+                       <!--end-notification-->
+                      </a>
+                    </li>
+                    <li class="mt-2">
+                      <a class="dropdown-item" href="#">
+                       <div class="d-flex li-notification">
+                         <!--start-notification-->
+                         <img src="./assets/img/table.png" alt="img-notification">
+                         <div class="mx-2 defintino-notification">
+                          <p>You have 5 new tasks You have 5 new tasks</p>
+                          <span>5 hours age</span>
+                         </div>
+                       </div>
+                       <!--end-notification-->
+                      </a>
+                    </li>
+                    <div class="text-center">
+                      <a href="#" class="text-capitalize link-view">view all</a>
+                    </div>
                   </ul>
+                
               </div>
               <!--notifications-->
               <!--user-->
               <div class="nav-item dropdown mx-3">
                 <a href="#" class="d-flex align-items-center text-white text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="./assets/img/pngwing.png" alt="pngwing" width="40" height="40" class="rounded-circle mx-2">
+                  <img src="./assets/img/pngwing-user.png" alt="pngwing" width="40" height="40" class="rounded-circle mx-2">
                   <strong class="col-3">walid</strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
@@ -73,13 +112,13 @@
         <nav class="navbar nav-sidebar px-0">
       
           <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 " href="#">
-            <img src="./assets/img/logo.png" alt="logo">
+            <img src="./assets/img/logo-fotr.png" alt="logo">
           </a>
           <div class="position-sticky pt-3 sidebar-sticky w-100">
               <h6 class="title-locetion">خريطة الموقع</h6>
               <ul class="nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a class="nav-link active" aria-current="page" href="index.html"
                         data-bs-toggle="tooltip" data-bs-placement="top" title="الرئيسية">
                         <i class="bi bi-house-door"></i>
                         <span>الرئيسية</span>
@@ -94,7 +133,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link dropdown-btn" href="#" title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                    <a class="nav-link dropdown-btn" href="users.html" title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
                       <i class="bi bi-box"></i>
                       <span>المستخدمين</span>
                     </a>
@@ -332,10 +371,10 @@
         </nav>
        <!--sidebarMenu-->
        <!--content-admin-->
-        <div class="content-admin mt-4 mb-5">
+        <div class="content-admin mt-4 mb-2">
           <div class="container-fluid">
               <h6 class="title-data">المستخدمين</h6>
-              <nav class="mt-4"  aria-label="breadcrumb">
+              <nav class="mt-3"  aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html"> <i class="bi bi-house-door"></i></a></li>
                   <li class="breadcrumb-item "><a href="users.html">المستخدمين</a></li>
@@ -343,29 +382,29 @@
 
                 </ol>
               </nav>
-              <div class="mt-4 pt-3">
+              <div class="mt-1 pt-2">
                 <a href="addition.html" class="btn-primary">أضافة </a>
 
               </div>
-              <div class="component-content-user mt-5 pt-4 pb-5">
+              <div class="component-content-user mt-4 pt-4 pb-5">
                 <div class="table-responsive">
-                  <table class="table table-user  align-middle mx-3">
-                    <thead>
+                  <table class="table table-user display align-middle mx-3 " id="example">
+                    <thead >
                       <tr class="pb-4">
                         <th scope="col">صورة</th>
                         <th scope="col">الاسم</th>
-                        <th scope="col"class="text-center">البريد الابكتروني</th>
-                        <th scope="col" class="text-center">الهاتف</th>
-                        <th scope="col" class="text-center">الاجراءات</th>
+                        <th scope="col">البريد الابكتروني</th>
+                        <th scope="col">الهاتف</th>
+                        <th scope="col">الاجراءات</th>
                       </tr>
                     </thead>
                     <tbody class="mt-4">
                       <tr>
                         <th><img class="img-user" src="./assets/img/table.png" alt="users"></th>
                         <td>سلمي محمد حنفي</td>
-                        <td class="text-center">salma@gmail.com</td>
-                        <td class="text-center">0222315362</td>
-                        <td class="text-center">
+                        <td>salma@gmail.com</td>
+                        <td>0222315362</td>
+                        <td>
                           <button class="btn  btn-t"> التفاصيل  </button>
                           <button class="btn btn-primary">تعديل</button>
                           <button class="btn btn-danger">حذف</button>
@@ -373,10 +412,10 @@
                       </tr>
                       <tr>
                         <th><img class="img-user" src="./assets/img/table.png" alt="users"></th>
-                        <td>سلمي محمد حنفي</td>
-                        <td class="text-center">salma@gmail.com</td>
-                        <td class="text-center">0222315362</td>
-                        <td class="text-center">
+                        <td>وليد محمد حنفي</td>
+                        <td >aalma@gmail.com</td>
+                        <td>1222315362</td>
+                        <td>
                           <button class="btn  btn-t"> التفاصيل  </button>
                           <button class="btn btn-primary">تعديل</button>
                           <button class="btn btn-danger">حذف</button>
@@ -384,10 +423,21 @@
                       </tr>
                       <tr>
                         <th><img class="img-user" src="./assets/img/table.png" alt="users"></th>
-                        <td>سلمي محمد حنفي</td>
-                        <td class="text-center">salma@gmail.com</td>
-                        <td class="text-center">0222315362</td>
-                        <td class="text-center">
+                        <td>محمد محمد حنفي</td>
+                        <td>balma@gmail.com</td>
+                        <td>2222315362</td>
+                        <td>
+                          <button class="btn btn-t"> التفاصيل  </button>
+                          <button class="btn btn-primary">تعديل</button>
+                          <button class="btn btn-danger">حذف</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><img class="img-user" src="./assets/img/table.png" alt="users"></th>
+                        <td>احمد محمد حنفي</td>
+                        <td>calma@gmail.com</td>
+                        <td>3222315362</td>
+                        <td>
                           <button class="btn btn-t"> التفاصيل  </button>
                           <button class="btn btn-primary">تعديل</button>
                           <button class="btn btn-danger">حذف</button>
@@ -396,31 +446,19 @@
                     </tbody>
                   </table>
                 </div>
-                <!--pagination-->
-                <nav aria-label="Page navigation mt-4">
-                  <ul class="Page-pagintion pagination px-md-3 px-1  pt-4">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!--pagination-->
+
               </div>
           </div>
         </div>
+      <!----->
       <!--content-admin-->
-     <script src="./assets/js/jquery.js"></script>
-     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/js/jquery.js"></script>
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="./assets/DataTables/datatables.min.js"></script>
+      <script
+       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+      </script>
+      <script src="./assets/js/cart.js"></script>
      <script src="./assets/js/form.js"></script>
 </body>
 </html>
