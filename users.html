@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="admin">
+     <meta name="description" content="admin">
+     <meta name="author" content="hadeer hussein">
+     <meta property="og:title" content="admin"/>
+     <meta property="og:type" content="Website"/>
+     <meta property="og:url" content="" />
+     <meta property="og:image" content="./assets/img/logo.png"/>
+     <link href="./assets/img/logo.png"  rel="shortcut icon"/>
+     <title> admin</title>
+     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+     <link href="./assets/font-awesome/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+     <link href="./assets/css/style.css" rel="stylesheet">
+     <link href="./assets/css/style-card.css" rel="stylesheet">
+</head>
+<body>
+      <!--start-nav-->
+       <header class="navbar bg-dark-navber flex-md-nowrap sticky-top">
+        <div class="container-fluid">
+          <!--button-toggle-->
+            <button class="navbar-toggler" type="button">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--end-toggle-->
+            <div class="nav-top-item  text-nowrap">
+              <div class="linke-length mx-3">
+                <a href="">
+                  English
+                  <i class="bi bi-globe"></i>
+                 
+                </a>
+              </div>
+              <!--notifications-->
+              <div class="nav-item dropdown mx-3">
+                  <a class="nav-link dropdown-toggle  position-relative" href="#" role="button" 
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle border border-light rounded-circle bg-danger">
+                      99+
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu  dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">You have 5 new tasks</a></li>
+                    <li><a class="dropdown-item" href="#">You have 5 new tasks</a></li>
+                   
+                  </ul>
+              </div>
+              <!--notifications-->
+              <!--user-->
+              <div class="nav-item dropdown mx-3">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/img/pngwing.png" alt="pngwing" width="40" height="40" class="rounded-circle mx-2">
+                  <strong class="col-3">walid</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                  <li><a class="dropdown-item" href="#">حسابى</a></li>
+                  <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
+              
+                </ul>
+              </div>
+             <!--end-user-->
+            </div>
+              
+        </div>
+       </header>
+       <!--end-header-nav-->
+       <!--sidebarMenu-->
+        <nav class="navbar nav-sidebar px-0">
+      
+          <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 " href="#">
+            <img src="./assets/img/logo.png" alt="logo">
+          </a>
+          <div class="position-sticky pt-3 sidebar-sticky w-100">
+              <h6 class="title-locetion">خريطة الموقع</h6>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="الرئيسية">
+                        <i class="bi bi-house-door"></i>
+                        <span>الرئيسية</span>
+                        
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="الطلبات">
+                        <i class="bi bi-list-task"></i>
+                        <span>الطلبات</span>
+                      
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#" title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                      <i class="bi bi-box"></i>
+                      <span>المستخدمين</span>
+                    </a>
+                    <ul class="dropdown-container">
+                      <li>
+                        <a class="dropdown-item" href="#"title="الموظفين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>الموظفين</span>
+                        
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>المستخدمين</span>
+                        
+                      </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#"
+                      title="المتاجر" data-bs-toggle="tooltip" data-bs-placement="top">
+                      <i class="bi bi-box"></i>
+                      <span>المتاجر</span>
+                      
+                    </a>
+                    <ul class="dropdown-container">
+                        <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                          <i class="bi bi-people"></i>
+                          <span>Action</span>
+                          
+                        </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                          <i class="bi bi-people"></i>
+                          <span>Action</span>
+                        </a>
+                      </li>
+                        <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                          <i class="bi bi-people"></i>
+                          <span>Action</span>
+                        </a>
+                        </li>
+                    </ul>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#" 
+                      title="المنتجات" data-bs-toggle="tooltip" data-bs-placement="top">
+                      <i class="bi bi-box"></i>
+                      <span>المنتجات</span>
+                      
+                    </a>
+                    <ul class="dropdown-container">
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                        
+                      </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                    </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#"
+                    title=" قائمة التسويق" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-box"></i>
+                        <span>  قائمة التسويق</span>
+                    </a>
+                    <ul class="dropdown-container">
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                        
+                      </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                    </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                      </li>
+                    </ul>
+                  
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#" 
+                    title=" التواصل والرسائل" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-box"></i>
+                        <span> التواصل والرسائل</span>
+                        
+                    </a>
+                    <ul class="dropdown-container">
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                        
+                      </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                    </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                      </li>
+                    </ul>
+                  
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-btn" href="#" 
+                        title="الماليات" data-bs-toggle="tooltip" data-bs-placement="top">
+                          <i class="bi bi-box"></i>
+                          <span>الماليات</span>
+                      </a>
+                      <ul class="dropdown-container">
+                        <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                          <i class="bi bi-people"></i>
+                          <span>Action</span>
+                          
+                        </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                          <i class="bi bi-people"></i>
+                          <span>Action</span>
+                        </a>
+                      </li>
+                        <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                          <i class="bi bi-people"></i>
+                          <span>Action</span>
+                        </a>
+                        </li>
+                      </ul>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#" 
+                        title="الاعدادات"data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-box"></i>
+                        <span>الاعدادات</span>   
+                    </a>
+                    <ul class="dropdown-container">
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                        
+                      </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                    </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                      </li>
+                    </ul>
+                  
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="التقارير">
+                        <i class="bi bi-box"></i>
+                        <span>التقارير</span>
+                        
+                    </a>    
+                    <ul class="dropdown-container">
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                        
+                      </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                    </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-btn" href="#"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="الاشعارات">
+                      <i class="bi bi-bell"></i>
+                      <span>الاشعارات</span>
+                        
+                    </a>
+
+                    <ul class="dropdown-container">
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                        
+                      </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                    </li>
+                      <li><a class="dropdown-item" href="#"title="المستخدمين" data-bs-toggle="tooltip" data-bs-placement="top">
+                        <i class="bi bi-people"></i>
+                        <span>Action</span>
+                      </a>
+                      </li>
+                    </ul>
+                  
+                  </li>
+              </ul>
+          </div>
+        </nav>
+       <!--sidebarMenu-->
+       <!--content-admin-->
+        <div class="content-admin mt-4 mb-5">
+          <div class="container-fluid">
+              <h6 class="title-data">المستخدمين</h6>
+              <nav class="mt-4"  aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html"> <i class="bi bi-house-door"></i></a></li>
+                  <li class="breadcrumb-item "><a href="users.html">المستخدمين</a></li>
+                  <li class="breadcrumb-item "><a href="addition.html">اضافة</a></li>
+
+                </ol>
+              </nav>
+              <div class="mt-4 pt-3">
+                <a href="addition.html" class="btn-primary">أضافة </a>
+
+              </div>
+              <div class="component-content-user mt-5 pt-4 pb-5">
+                <div class="table-responsive">
+                  <table class="table table-user  align-middle mx-3">
+                    <thead>
+                      <tr class="pb-4">
+                        <th scope="col">صورة</th>
+                        <th scope="col">الاسم</th>
+                        <th scope="col"class="text-center">البريد الابكتروني</th>
+                        <th scope="col" class="text-center">الهاتف</th>
+                        <th scope="col" class="text-center">الاجراءات</th>
+                      </tr>
+                    </thead>
+                    <tbody class="mt-4">
+                      <tr>
+                        <th><img class="img-user" src="./assets/img/table.png" alt="users"></th>
+                        <td>سلمي محمد حنفي</td>
+                        <td class="text-center">salma@gmail.com</td>
+                        <td class="text-center">0222315362</td>
+                        <td class="text-center">
+                          <button class="btn  btn-t"> التفاصيل  </button>
+                          <button class="btn btn-primary">تعديل</button>
+                          <button class="btn btn-danger">حذف</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><img class="img-user" src="./assets/img/table.png" alt="users"></th>
+                        <td>سلمي محمد حنفي</td>
+                        <td class="text-center">salma@gmail.com</td>
+                        <td class="text-center">0222315362</td>
+                        <td class="text-center">
+                          <button class="btn  btn-t"> التفاصيل  </button>
+                          <button class="btn btn-primary">تعديل</button>
+                          <button class="btn btn-danger">حذف</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><img class="img-user" src="./assets/img/table.png" alt="users"></th>
+                        <td>سلمي محمد حنفي</td>
+                        <td class="text-center">salma@gmail.com</td>
+                        <td class="text-center">0222315362</td>
+                        <td class="text-center">
+                          <button class="btn btn-t"> التفاصيل  </button>
+                          <button class="btn btn-primary">تعديل</button>
+                          <button class="btn btn-danger">حذف</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--pagination-->
+                <nav aria-label="Page navigation mt-4">
+                  <ul class="Page-pagintion pagination px-md-3 px-1  pt-4">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!--pagination-->
+              </div>
+          </div>
+        </div>
+      <!--content-admin-->
+     <script src="./assets/js/jquery.js"></script>
+     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+     <script src="./assets/js/form.js"></script>
+</body>
+</html>
